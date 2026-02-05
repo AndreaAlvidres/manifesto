@@ -13,13 +13,33 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+.portal {
+    position: absolute;
+    top: 21%; 
+    left: 71%; 
+    width: 35px; 
+    height: 35px;
+    border: 2px solid white;
+    overflow: hidden;
+    z-index: 100;
+}
+.reveal-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* This starts the second image at size zero (invisible) */
+    transform: scale(0);
+    /* This makes the "zoom" look smooth later */
+    transition: transform 0.5s ease-in-out;
+}
 }
     </style>
 </head>
 <body>
 
-    <h1>HELLO WORLD</h1>
-    <p>This is my new project starting from zero.</p>
+    <<div class="portal">
+        <img src="/manifesto/manifesto_page2.png" class="reveal-image">
+    </div>
 
 </body>
 </html>
