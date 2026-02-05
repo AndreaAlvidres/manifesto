@@ -37,6 +37,19 @@
             transform: scale(0);
             transition: transform 0.6s ease-in-out;
         }
+        .reveal-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Keeps it centered in the heart */
+            color: white;
+            font-family: 'Snell Roundhand', cursive;
+            font-size: 3rem;
+            width: 100%;
+            text-align: center;
+            pointer-events: none;
+            z-index: 1001; /* Sits on top of the second image */
+        }
 
         .portal:hover {
             width: 100vw;
